@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(1, 32, 15);
+}
+.reg{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.register-form{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px gray;
+}
+.register-head{
+    text-align: center;
+    font-size: 25px;
+}
+.input-box{
+    width: 100%;
+}
+.input-box input{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    outline:none;
+}
+.register-submit{
+    padding: 1rem;
+    background-color: rgb(4, 140, 74);
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+}
+#message{
+    display: none;
+}
+table,tr,td,th{
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    padding: 10px;
+}
+.admin-box{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem;
+    gap: 5rem;
+}
+.customer-box{
+    width: 100%;
+}
+#btnAdd{
+    background-color: rgb(31, 48, 144);
+    border-radius: 4px;
+    padding: 0.2rem;
+    color: #ffffff;
+}
+
+
+@media (max-width:997px) {
+    .register-form{
+        width: 90%;
+    }
+    .admin-box{
+        flex-direction: column;
+        gap: 3rem;
+    }
+    
+}
